@@ -32,7 +32,7 @@
         data-bs-theme="dark"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img class="img-fluid" src="./img/duck.png" alt="logo" />
           </a>
           <button
@@ -82,6 +82,8 @@
         <div class="py-4">
           <h1>Nuovo Libro</h1>
         </div>
+
+        <!-- FORM -->
         <form class="row g-3 fw-medium">
           <div class="col-6">
             <label for="inputName" class="form-label">Nome Autore</label>
@@ -90,7 +92,7 @@
               class="form-control"
               id="inputName"
               placeholder="Inserisci il nome dell'autore"
-              requested
+              required
             />
           </div>
           <div class="col-6">
@@ -100,7 +102,7 @@
               class="form-control"
               id="inputSurname"
               placeholder="Inserisci il cognome dell'autore"
-              requested
+              required
             />
           </div>
           <div class="col-12">
@@ -111,7 +113,7 @@
               id="inputTitle"
               placeholder="Inserisci il titolo del libro"
               aria-describedby="title"
-              requested
+              required
             />
             <div id="titleHelpBlock" class="form-text">
               Titolo versione italiana
@@ -123,7 +125,7 @@
               class="form-select"
               id="form-select"
               aria-label="Default select example"
-              requested
+              required
             >
               <option value="">Scegli il genere</option>
               <option value="1">Uomo</option>
@@ -140,7 +142,7 @@
               class="form-control"
               id="inputYear"
               placeholder="Inserisci l'anno"
-              requested
+              required
             />
           </div>
           <div class="col-md-4">
@@ -150,7 +152,7 @@
               class="form-control"
               id="inputYear"
               placeholder="Inserisci il codice ISBN#"
-              requested
+              required
             />
           </div>
           <hr class="mt-5" />
@@ -166,12 +168,14 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck" />
               <label class="form-check-label" for="gridCheck">
-                Check me out
+                Disponibile anche in digitale
               </label>
             </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">
+              Aggiungi libro
+            </button>
           </div>
         </form>
       </div>
